@@ -90,41 +90,18 @@
   background-color: #d32f2f; /* Darker red on hover */
 }
 
-/* Notification bar styles */
-.notification-bar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+/* Notification styles */
+.notification-item {
   width: 100%;
   padding: 10px 20px;
-  background-color: #388e3c; /* Dark green background */
-  color: #fff;
+  background-color: #f44336; /* Red background */
+  color: #fff; /* Text color */
+  text-align: center;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1000; /* Ensure it's above other content */
-}
-
-.notification-icon {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.notification-title {
-  margin-right: auto; /* Push SmartPechay to the right */
-}
-
-.notifications-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.notification-item {
-  margin-bottom: 5px;
-  padding: 10px;
-  background-color: #f44336; /* Red background */
-  color: #fff; /* Text color */
-  border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }

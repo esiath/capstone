@@ -1,5 +1,3 @@
-// LatestData.js
-
 import React, { useState, useEffect } from 'react';
 import './LatestData.css';
 import SensorGraph from './SensorGraph';
@@ -79,9 +77,9 @@ const LatestData = () => {
 
   return (
     <div className="latest-data-container">
-      {showDrySoilAlert && (
-        <div className="alert alert-danger" role="alert">
-          Soil moisture level is high (above 900) indicating dry soil.
+      {notification && (
+        <div className="notification-item">
+          {notification}
         </div>
       )}
 
@@ -125,12 +123,6 @@ const LatestData = () => {
           </table>
         </div>
       </div>
-
-      {notification && (
-        <div className="notification-item">
-          {notification}
-        </div>
-      )}
     </div>
   );
 };
